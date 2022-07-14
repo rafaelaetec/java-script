@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM </title>
+    <style>
+        body{
+            background-color: rgb(9, 182, 221);
+            color:white;
+            font:normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p id="p1">Aqui vai o resultado!</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+       var t = window.document.getElementsByTagName('h1')[0]
+       t.innerText = 'Olá, tudo bem?'
+       var p = window.document.getElementById('p1')
+       p.style.background='black'
+       var div = window.document.getElementsByClassName('msg')[0]
+       div.style.background='purple'
+       div.innerHTML = 'Alecrim, alecrim dourado que nasceu no campo ser ser semeado '
+    </script>
+</body>
+</html>

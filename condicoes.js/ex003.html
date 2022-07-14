@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <p>Olá, o limite de velocidade na Av Getúlio Vargas é de 60Km/h.
+        Digite a velocidade do seu carro para consultar se foi multado
+    </p>
+    Velocidade do carro <input type="number" name="velocidade" id="velocidade"> Km/h
+    <input type="button" value= "Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var vel = window.document.getElementById('velocidade')
+            var res = window.document.getElementById('res')
+            var vel1 = Number(velocidade.value)
+            res.innerHTML = `Sua velocidade atual é de<strong> ${vel1}</strong>Km/h</br>`
+            if (vel1 > 60){
+                res.innerHTML += 'Você está multado'
+            }
+            res.innerHTML += ' Dirija sempre com cinto de segurança'
+        }
+    </script>
+</body>
+</html>

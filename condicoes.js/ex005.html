@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de carros</h1>
+    Digite o ano do carro<input type="number" name="car" id="car">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+        var car1 = window.document.getElementById('car')
+        var resultado = window.document.getElementById('res')
+        var res1 = Number(car.value)
+        res.innerHTML = `O ano atual do seu carro é <strong>${res}</strong>`
+        if (res1 > 2015){
+            res.innerHTML = 'Seu carro é novo'
+        }
+        res.innerHTML = 'Seu carro é velho!'
+    }
+    </script>
+</body>
+</html>
