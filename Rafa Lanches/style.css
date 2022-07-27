@@ -1,0 +1,13 @@
+body{
+    background-color: antiquewhite;
+}
+section{
+    background-color: WHITE;
+    text-align: center;
+    width:400px;
+    height:150px;
+    padding: 10px;
+    font: bold 12pt arial;
+    margin:auto;
+    border-radius: 10px;
+}
