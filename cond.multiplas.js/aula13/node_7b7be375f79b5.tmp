@@ -6,4 +6,4 @@ while (c <= 3){
 var c = 1
 do{
     console.log(`Passo ${c}`)
-}while(c <=4)
+}while(c <=3)
