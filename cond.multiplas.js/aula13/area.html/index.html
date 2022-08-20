@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <script>
+        var l = window.prompt('Insira o valor da largura da sua sala')
+       var c = window.prompt('Insira o tamanho do comprimento')
+       var area = l * c
+       var perimetro = (l + l) * (c + c)
+       var m = window.prompt('Insira o valor da mão de obra por m²')
+       var preco = area * m
+       var p = window.prompt('Insira o valor do seu piso')
+       var res = window.document.getElementById('res')
+       res.innerHTML = `A área do seu terreno é de ${area}<br>O perimetro do seu terreno é ${perimetro}`
+    </script>
+</body>
+</html>
